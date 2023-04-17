@@ -9,8 +9,14 @@ public class ColRowLists {
     static ArrayList<Integer> spielerPos = new ArrayList<>();
     static ArrayList<Integer> comPos = new ArrayList<>();
     static ArrayList<Integer> trackPos = new ArrayList<>();
+    Tic_Tac_Toe ttt = new Tic_Tac_Toe();
+
+    public ColRowLists(){
+
+    }
 
     static String trackPositions(){ //check winners
+        //Tic_Tac_Toe.initBoard();
         List topRow = Arrays.asList(1,2,3);
         List midRow = Arrays.asList(4,5,6);
         List botRow = Arrays.asList(7,8,9);
@@ -25,8 +31,14 @@ public class ColRowLists {
         return "have you seen me";
     }
 
+    /*void main(){
+        Tic_Tac_Toe ttt = new Tic_Tac_Toe();
+        ttt.userInput(new char[][] board);
+        ttt.
+    }*/
+
     static String winOrLose(List topRow, List midRow, List botRow, List leftCol, List midCol, List rightCol, List diagonal1, List diagonal2){
-        trackPositions();
+        new Tic_Tac_Toe();
 
         List iWon = new ArrayList<>();
         iWon.add(topRow);
@@ -39,7 +51,7 @@ public class ColRowLists {
         iWon.add(diagonal2);
 
         for(var l: iWon){
-            if(spielerPos.containsAll((Collection<?>) l)){
+            if(spielerPos.containsAll((Collection<?>) l)){ //früher spielerPos.containsAll((Collection<?>) l)
                 return "you won!";
             } else if (comPos.contains(l)){
                 return "com won, try again";
