@@ -6,10 +6,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
-public class Tic_Tac_Toe{
-    /*in the gameboard method overwrite the board I pass in as a parameter with a brand new empty board,
-    * then pring that brand new board*/
-
+public class TicTacToe{
+   
 
     private static char[][] initBoard(){
         //initialise the board
@@ -90,9 +88,7 @@ public class Tic_Tac_Toe{
         System.out.println("Welcome to Tic Tac Toe");
         userInput(board);
 
-        //System.out.println("show me your list" + ttt.winOrLose());
-
-
+ 
     }
 
     private static void userInput(char[][] board){
@@ -109,6 +105,6 @@ public class Tic_Tac_Toe{
 
     }
 
-    /* evtl Vererbung/Polymorphie verwenden als Übungen!! */
+
 
 }
