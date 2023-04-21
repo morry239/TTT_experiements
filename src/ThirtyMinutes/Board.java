@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
-public class TicTacToe{
+public class Board{
    
 
     private static char[][] initBoard(){
