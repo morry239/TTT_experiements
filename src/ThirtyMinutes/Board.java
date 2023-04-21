@@ -81,7 +81,7 @@ public class Board{
     }
 
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
 
         ColRowLists ttt = new ColRowLists();
         char[][] board = new char[3][3];
@@ -89,7 +89,7 @@ public class Board{
         userInput(board);
 
  
-    }
+    }*/
 
     private static void userInput(char[][] board){
         System.out.println("Select your pos 1-9");
